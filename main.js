@@ -8,11 +8,13 @@ function init(){
 }
 function appendValues() {
 
+//  getting values from  input fields
   var name = $('#name').val();
   var number = $('#number').val();
   var img = $('#lastname').val();
   var address = $('#address').val();
   var email = $('#email').val();
+   // creating dom elements and add classes
   var $tr = $('<tr>');
   var $tdName = $('<td>').addClass('name');
   var $tdNumber = $('<td>').addClass('number');
@@ -20,7 +22,7 @@ function appendValues() {
   var $tdaddress = $('<td>').addClass("address");
   var $tdemail = $('<td>').addClass("email");
 
-
+  // appaending DOM elements to tbody
   $tdName.append(name);
   $tdNumber.append(number);
   $tdimg.append(img);
@@ -30,13 +32,14 @@ function appendValues() {
 
   $('#rowDisplay').append($tr);
 }
+
+// Invoking new funciton
 function addNewContact(){
   appendValues();
-
-  $('#rowDisplay').find('#info').find('#name').val('');
-  $('#rowDisplay').find('#info').find('#number').val('');
-  $('#rowDisplay').find('#info').find('#lastname').val('');
-  $('#rowDisplay').find('#info').find('#address').val('');
-  $('#rowDisplay').find('#info').find('#email').val('');
-
+// clearing the input fields
+  $('#rowDisplay').find('#number').val('');
+  $('#rowDisplay').find('#lastname').val('');
+  $('#rowDisplay').find('#name').val('');
+  $('#rowDisplay').find('#address').val('');
+  $('#rowDisplay').find('#email').val('');
 }
