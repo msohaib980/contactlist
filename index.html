@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- jumbtroton start-->
+  <div class="container">
+  <div class="jumbotron">
+    <img src="http://slaneymortgages.com/wp-content/uploads/2013/06/lets-keep-in-touch.png" alt="">
+
+</div>
+<!-- jumbotron end -->
+  <div class="conatiner">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Contact List</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th >First Name</th>
+              <th >Last Name</th>
+              <th >Phone</th>
+              <th >address</th>
+              <th >email</th>
+            </tr>
+          </thead>
+          <tbody id="rowDisplay">
+            <tr id="info">
+              <td><input type="text" name="" id="name" placeholder="name"></td>
+              <td><input type="text" name="" id="lastname" placeholder="Last Name"></td>
+              <td><input type="number" name="" id="number" placeholder="phone Number"></td>
+              <td><input type="text" name="" id="address" placeholder="Address"></td>
+              <td><input type="email" name="" id="email" placeholder="email"></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <button class="addnew btn">Add New Contact</button>
+      </div>
+    </div>
+  </div>
+<!--
+  <tr class="contactRow" id="contactTemplate">
+    <td class="name"></td>
+    <td class="number"></td>
+    <td class="img"></td>
+    <td class="address"></td>
+    <td class="email"></td>
+  </tr> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
